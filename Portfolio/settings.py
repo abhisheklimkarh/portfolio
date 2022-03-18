@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 import django_heroku
 
@@ -124,7 +124,7 @@ STATIC_URL = '/static/'
 # Added Static File Dirs Manually
 # Added Manually
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'static'
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",
