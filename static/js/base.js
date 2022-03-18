@@ -4,12 +4,12 @@ if (document.readyState == 'loading') {
      ready()
 }
 function ready() {
-
      window.onload = function () {
           document.getElementById('spin').classList.add('fade-out')
           document.getElementById('spin').style.display = "none"
           document.getElementById('content').style.display = "block"
           var url = window.location.href;
+          console.log("URL ===>>> ", url)
           if (url == 'https://abhisheklimkar.herokuapp.com/home/' || url == 'https://abhisheklimkar.herokuapp.com/') {
                document.getElementById('home').classList.add('active')
                document.getElementById('header').classList.add('mb-auto')
@@ -36,4 +36,4 @@ function ready() {
 $(window).load(function(){
      $('#spin').fadeOut();
      $('#spin').delay(150).fadeOut('slow');
- }),4000;
+ });
