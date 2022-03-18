@@ -1,4 +1,5 @@
 {% load static %}
+{% load staticfiles %}
 <!doctype html>
 <html lang="en" class="h-100">
     <head>
@@ -34,8 +35,8 @@
               href="/static/images/coding.png"
               type="image/x-icon">
         <!-- Custom styles for this template -->
-        <link href="{% static 'css/cover.css' %}" rel="stylesheet">
-        <script src="{% static 'js/base.js' %}"></script>
+        <link href="{% staticfiles 'css/cover.css' %}" rel="stylesheet">
+        <script src="{% staticfiles 'js/base.js' %}"></script>
     </head>
     <body class="d-flex h-100 text-center text-white bg-dark img-fluid"
           style="background:linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{% static "images/dev.png" %}'); background-size:cover;">
